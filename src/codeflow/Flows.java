@@ -25,7 +25,7 @@ public class Flows {
 
     public void alphaD(int number) {
         System.out.println(" r ");
-        if (number > 5) {
+        if (number > 0) {
             System.out.println("  ");
         }
         System.out.println("s " + " j " + " o " + " v "+ " t ");

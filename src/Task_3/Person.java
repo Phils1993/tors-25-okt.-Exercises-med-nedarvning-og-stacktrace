@@ -11,9 +11,16 @@ public abstract class Person {
         return name;
     }
     public void setName(String name) {
-        this.name = name;
+        if (name.length() > 1) {
+            this.name = name;
+        }
+        else{
+            System.out.println("prøv at skriv et længere navn");
+        }
     }
 
+    //3.2
     public abstract boolean addCourse(String course);
+
 
 }

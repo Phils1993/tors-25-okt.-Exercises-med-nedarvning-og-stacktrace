@@ -15,7 +15,7 @@ public class Cinema {
             }
         }
         this.seats[0][0] = ("X"); // sætter række 0 og sæde 0 til "X" for altid.
-        // Der kaldes ikke på dette i main, fordi det er for altid
+        // Der kaldes ikke på dette i Main, fordi det er for altid
     }
 
     public int getRows() {

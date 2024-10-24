@@ -3,18 +3,29 @@ package Task_3;
 import java.util.ArrayList;
 
 //3.2
-public abstract class Teacher extends Person {
-    private ArrayList<String> canTeach;
-    private ArrayList<String> currentCourses;
+public class Teacher extends Person {
+    // 3.3
+    ArrayList<String> canTeach = new ArrayList<>();
+    ArrayList<String> currentCourses = new ArrayList<>();
 
-    public Teacher(String name, ArrayList<String>canTeach) {
+    //3.1
+    public Teacher(String name, ArrayList<String> canTeach) {
         super(name);
         this.canTeach = canTeach;
-        this.currentCourses = new ArrayList<>();
     }
-    // IKKE sikker på det er rigtigt
+
+    //3.5
     @Override
     public boolean addCourse(String course) {
-        return false;
+        if (canTeach.contains(course)) {
+            currentCourses.add(course);
+            return true;
+        }
+            return false;
+    }
+
+    public ArrayList<String> getCanTeach() {
+        return canTeach;
     }
 }
+
